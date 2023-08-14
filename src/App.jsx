@@ -40,8 +40,8 @@ function App() {
   // }
 
   return (
-    <div className="flex justify-center flex-col items-center font-Montserrat">
-      <h1 className="text-2xl font-[400] bg-teal-300 mt-4 p-5 rounded-xl font-Montserrat shadow-md">
+    <div className="flex justify-center flex-col items-center font-Montserrat bg-neutral-100 h-[100dvh]">
+      <h1 className="text-2xl font-[400] bg-teal-300 p-5 rounded-xl font-Montserrat shadow-md">
         Paginate
       </h1>
       <>{loading? <div className="h-[60dvh] flex items-center justify-center"><Loading /></div>: <Posts posts={currentPosts}/>}</>
