@@ -8,7 +8,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate}) => {
   }
 
   return (
-    <footer className="flex justify-center gap-2 bottom-10 fixed md:gap-4 md:bottom-10">
+    <footer className="flex justify-center gap-2 bottom-10 fixed md:gap-4 md:bottom-8">
       {pageNumbers.map((number) => {
         return (
           <span
