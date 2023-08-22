@@ -1,16 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Theme1 from "./Theme/Theme1";
-import Theme2 from "./Theme/Theme2";
+
 const Header = () => {
   return (
-    <header className="h-[10vh] min-w-full flex justify-center items-center gap-5 ">
-      <span className="cursor-pointer">
+    <header className="h-[10vh] min-w-full flex justify-center items-center gap-5 bg-teal-100 shadow-lg font-Montserrat tracking-widest p-5">
+      <span className="cursor-pointer ml-6">
         <NavLink to="/theme1">
         Theme1
         </NavLink>
       </span>
-      <span className="cursor-pointer">
+      <span className="cursor-pointer ml-6">
         <NavLink to="/theme2" >
         Theme2
         </NavLink>
