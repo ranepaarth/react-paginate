@@ -19,7 +19,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate}) => {
             md:w-10 md:h-10
             active:bg-teal-500
             active:text-teal-50
-             focus:outline-none focus:ring focus:ring-teal-500">{number}</button>
+             focus:outline-none focus:shadow-outline focus:ring-teal-500">{number}</button>
           </span>
         );
       })}
