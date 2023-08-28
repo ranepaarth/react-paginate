@@ -64,18 +64,37 @@ const Theme2 = () => {
           </div>
         )}
 
-        <div className="flex justify-center items-center mb-5 py-5 px-10 gap-x-6 text-xl cursor-pointer" >
-          <span onClick={() => selectPageHandler(page - 1)} className={page>1 ? "bg-teal-300 p-3 rounded-xl": "hidden"}>Prev</span>
-          <span className="flex justify-center items-center gap-x-5">
+        <div className="flex justify-center items-center pb-5 gap-x-2 md:gap-x-4 text-sm cursor-pointer ">
+          <span
+            onClick={() => selectPageHandler(page - 1)}
+            className={
+              page > 1 ? "bg-teal-300 p-2 md:p-3 text-xs rounded-md" : "hidden"
+            }
+          >
+            Prev
+          </span>
+          <span className="flex justify-center items-center  gap-x-3 md:gap-x-8">
             {[...Array(products.length / 10)].map((_, index) => {
               return (
-                <span onClick={() => selectPageHandler(index + 1)} className='bg-teal-300 p-3 rounded-full w-10 h-10 flex items-center justify-center'>
+                <span
+                  onClick={() => selectPageHandler(index + 1)}
+                  className="bg-teal-300 p-2 md:p-4 rounded-full w-6 h-6 flex items-center justify-center"
+                >
                   {index + 1}
                 </span>
               );
             })}
           </span>
-          <span onClick={() => selectPageHandler(page + 1)}className={page<products.length/10 ? "bg-teal-300 p-3 rounded-xl": "hidden"}>Next</span>
+          <span
+            onClick={() => selectPageHandler(page + 1)}
+            className={
+              page < products.length / 10
+                ? "bg-teal-300 p-2 rounded-md text-xs md:p-3"
+                : "hidden"
+            }
+          >
+            Next
+          </span>
         </div>
       </div>
     );
